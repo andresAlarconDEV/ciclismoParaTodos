@@ -16,17 +16,41 @@
     <header>
         <div class="headerClase">
             <a href="#"><img class="imagenLogo" href="./index.html" src="./imagenes/logo.png" alt="logoImagen"> </a>
-            <nav>
-                <ul class="listaMenu">
-                    <li class="headerMenu"><a href="./index.html" id="inicio">Inicio</a></li>
-                    <li class="headerMenu"><a href="./secciones/carrera.html">Carreras</a></li>
-                    <li class="headerMenu"><a href="./secciones/ciclista.html">Ciclistas</a></li>
-                    <li class="headerMenu"><a href="./secciones/grupeta.html">Grupeta</a></li>
-                    <li class="headerMenu"><a href="./secciones/tiendas.html">Tiendas Recomendadas</a></li>
-                </ul>
+            <!-- <nav>
+                <div >
+                    <div>
+                        <ul class="listaMenu">
+                            <li class="headerMenu"><a href="./index.html" id="inicio">Inicio</a></li>
+                            <li class="headerMenu"><a href="./secciones/carrera.html">Carreras</a></li>
+                            <li class="headerMenu"><a href="./secciones/ciclista.html">Ciclistas</a></li>
+                            <li class="headerMenu"><a href="./secciones/grupeta.html">Grupeta</a></li>
+                            <li class="headerMenu"><a href="./secciones/tiendas.html">Tiendas Recomendadas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary dropdown-menu" data-bs-theme="dark">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav listaMenu">
+                            <li class="headerMenu"><a class="nav-link" href="./index.html" id="inicio">Inicio</a></li>
+                            <li class="headerMenu"><a class="nav-link" href="./secciones/carrera.html">Carreras</a></li>
+                            <li class="headerMenu"><a class="nav-link" href="./secciones/ciclista.html">Ciclistas</a></li>
+                            <li class="headerMenu"><a class="nav-link" href="./secciones/grupeta.html">Grupeta</a></li>
+                            <li class="headerMenu"><a class="nav-link" href="./secciones/tiendas.html">Tiendas Recomendadas</a></li>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
+
     <main>
         <section class="mainIntro">
             <img class="imagenBanner" src="./imagenes/fondoBici.jpg" alt="Bicicleta Specialized">
