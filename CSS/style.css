@@ -1,0 +1,180 @@
+/* fuente externa */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Nunito:wght@700;800&display=swap');
+
+/* reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #696773;
+    height: 130px;
+    background: linear-gradient(to bottom, #696773 90%, #1f1f1f);
+}
+
+footer {
+    background-color: #696773;
+    height: 80px;
+    background: linear-gradient(to top, #696773 90%, #ffffff00);
+}
+
+.headerClase {
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.imagenLogo {
+    width: 200px;
+    display: block;
+}
+
+.listaMenu {
+    display: flex;
+    gap: 25px;
+}
+
+.headerMenu {
+    list-style: none;
+    display: inline;
+}
+
+.listaMenu li a {
+    font-size: 18px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: white;
+    transition: 0.5s ease;
+}
+
+.listaMenu:hover li a {
+    color: #ffb26b;
+    border-bottom: 1px solid #ffb26b;
+    transition: 0.5s ease-in-out;
+}
+
+.listaMenu:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.7;
+    filter: blur(0.5px);
+    background: none;
+    border-bottom: none;
+    
+}
+
+.mainIntro {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+}
+
+.textoBanner {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textoCita {
+    font-size: 22px;
+    color: white;
+    width: 60%;
+    position: absolute;
+    text-align: right;
+    font-style: italic;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.imagenBanner {
+    filter: opacity(45%);
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+#contacto li {
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#contacto li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#redes li {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#redes li img {
+    height: 35px;
+}
+
+.negrita {
+    font-weight: bold;
+    color: #ffb26b;
+}
+.citaNombre {
+    color: #ffb26b;
+}
+
+#imagenPogacar,
+#imagenVanAert,
+#imagenEvenepoel {
+    width: 33%;
+    display: inline;
+}
+
+#rankingCOL {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.imagenCompetencia {
+    height: 800px;
+}
+
+.imagenAguapa {
+    height: 200px;
+    display: block;
+}
+
+
+#aguapa {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.divTiendas {
+    display: inline-block;
+}
