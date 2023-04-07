@@ -23,7 +23,7 @@ header {
 
 footer {
     background-color: #363946;
-    height: 80px;
+    height: 110px;
     background: linear-gradient(to top, #363946 90%, #69677300);
 }
 
@@ -34,12 +34,16 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .imagenLogo {
     width: 200px;
     display: block;
+}
+
+.icono {
+    height: 100%;
 }
 
 .listaMenu {
@@ -71,7 +75,7 @@ footer {
     filter: blur(0.5px);
     background: none;
     border-bottom: none;
-    
+
 }
 
 .navbar {
@@ -79,7 +83,7 @@ footer {
 }
 
 .container-fluid {
-     flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .bg-body-tertiary {
@@ -105,6 +109,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .textoCita {
     font-size: 22px;
     color: white;
@@ -117,23 +122,26 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-
+.claseIcono {
+    height: 100%;
+}
 
 .imagenBanner {
     filter: opacity(45%);
     width: 100%;
     height: 100%;
-    
+
 }
 
-.acordeon, .transparencia{
+.acordeon,
+.transparencia {
     width: 70%;
     margin: auto;
     height: auto;
     padding: 2rem;
     border-radius: 1rem;
     font-size: 1rem;
-    color:white;
+    color: white;
     background: #81959531;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -141,27 +149,46 @@ footer {
 
 }
 
+.footerClase {
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
+.logo {
+    height: 100%;
+    position: relative;
+}
 
-#contacto li {
+.contacto, .redes {
+    padding-left: 0;
+    margin: 0;
+}
+
+.contacto li {
     display: inline;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-#contacto li a {
+.contacto li a {
     text-decoration: none;
     color: white;
 }
 
 
-#redes li {
+.redes li {
     display: inline;
     padding-right: 5px;
     padding-left: 5px;
 }
 
-#redes li img {
+.redes li img {
     height: 35px;
 }
 
@@ -169,6 +196,7 @@ footer {
     font-weight: bold;
     color: #ffb26b;
 }
+
 .citaNombre {
     color: #ffb26b;
 }
@@ -209,8 +237,9 @@ footer {
     .headerClase {
         align-items: flex-start;
     }
+
     .bg-body-tertiary {
-        color:white;
+        color: white;
         background: #81959531;
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
@@ -221,7 +250,8 @@ footer {
     .navbar-toggler {
         border: solid white;
     }
+
     .navbar-toggler.icon {
         background-image: white;
     }
-    }
+}
