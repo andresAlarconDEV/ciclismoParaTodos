@@ -11,8 +11,10 @@
     line-height: 1.5;
 }
 
+/* Estructura pagina */
 body {
     background-color: #696773;
+    min-height: 100%;
 }
 
 header {
@@ -21,14 +23,19 @@ header {
     background: linear-gradient(to bottom, #363946 90%, #1f1f1f);
 }
 
+
+
 footer {
     background-color: #363946;
+    margin-top: auto;
     height: 110px;
-    background: linear-gradient(to top, #363946 90%, #69677300);
+    background: linear-gradient(to top, #363946 90%, #1f1f1f);
     position: relative;
     bottom: 0;
     width: 100%;
 }
+
+/* Header */
 
 .headerClase {
     width: 90%;
@@ -37,7 +44,6 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .imagenLogo {
@@ -95,6 +101,7 @@ footer {
     border: 0px;
 }
 
+/* Main Index */
 .mainIntro {
     position: relative;
     display: inline-block;
@@ -142,7 +149,7 @@ footer {
 .imagenBanner {
     filter: opacity(45%);
     width: 100%;
-} 
+}
 
 .acordeon,
 .transparencia {
@@ -162,6 +169,7 @@ footer {
 .accordion {
     --bs-accordion-bg: none;
 }
+
 .accordion-item {
     --bs-accordion-bg: #ffffff73 !important;
     --bs-accordion-btn-focus-box-shadow: none;
@@ -188,13 +196,16 @@ footer {
     backdrop-filter: blur(5px);
 }
 
+/* Footer */
+
+
 .footerClase {
-    width: 90%;
+    width: 100%;
     height: 75%;
     margin: auto;
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     /* flex-wrap: wrap; */
 }
@@ -204,7 +215,8 @@ footer {
     position: relative;
 }
 
-.contacto, .redes {
+.contacto,
+.redes {
     padding-left: 0;
     margin: 0;
     height: 100%;
@@ -228,7 +240,7 @@ footer {
     padding-left: 5px;
 }
 
-.redes li a{
+.redes li a {
     text-decoration: none;
 }
 
@@ -236,6 +248,7 @@ footer {
     height: 50%;
 }
 
+/* varios */
 .negrita {
     font-weight: bold;
     color: #ffb26b;
@@ -284,60 +297,112 @@ footer {
 
 /* GRUPETA */
 
-.gridGrupeta {
-    display: grid;
+
+
+.grupetaForm {
     width: 90%;
     margin: auto;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: repeat(6, 90px);
+    padding: 0% 2% 3% 2%;
+
+}
+
+.gridGrupeta {
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 150px repeat(2, 100px) repeat(2, 200px);
     gap: 0px 0px;
+    overflow: hidden;
     grid-auto-flow: row;
     grid-template-areas:
+        "tituloForm tituloForm tituloForm tituloForm"
         "descripcionRegistro descripcionRegistro formRegistro formRegistro"
         "descripcionRegistro descripcionRegistro formRegistro formRegistro"
-        "descripcionRegistro descripcionRegistro formRegistro formRegistro"
-        "galeriaRegistro galeriaRegistro formRegistro formRegistro"
         "galeriaRegistro galeriaRegistro formRegistro formRegistro"
         "galeriaRegistro galeriaRegistro formRegistro formRegistro";
 }
 
+.tituloForm {
+    grid-area: tituloForm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.tituloTxt {
+    color: white;
+    -webkit-text-stroke: 2px #ffb26b; 
+}
+
+.tituloTxt h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
 .descripcionRegistro {
     grid-area: descripcionRegistro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .galeriaRegistro {
     grid-area: galeriaRegistro;
+    display: flex;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    -webkit-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
 }
 
 .formRegistro {
     grid-area: formRegistro;
-    width: 70%;
+    display: flex;
+}
+
+.form {
+    width: 80%;
     margin: auto;
+    margin-top: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: #ffffff11;
+    backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(209, 213, 219, 0.3);
+    -webkit-box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
+    -moz-box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
+    box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
+
 }
 
 
-.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+.carousel-item.active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-  .carousel-item, .active {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+.carousel, .carousel-inner, .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+/* ////////////////////////////////////////////////// */
 /* MEDIA Responsive */
+/* ////////////////////////////////////////////////// */
+
+
 @media (max-width: 992px) {
-    .headerClase {
+    /* .headerClase {
         align-items: flex-start;
-    }
+    } */
 
     .bg-body-tertiary {
         color: white;
@@ -362,6 +427,7 @@ footer {
         width: 150px;
         display: block;
     }
+
     .textoBanner h3 {
         font-family: 'Nunito', sans-serif;
         font-size: 22px;
@@ -374,8 +440,36 @@ footer {
     }
 
     .footerClase {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+    }
+
+    .claseIcono {
+        display: none;
+    }
+
+    .redes {
+        display: flex;
+        height: 50%;
+    }
+
+    .redes li img {
+        height: 100%;
+    }
+    .gridGrupeta {
+
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 100px) repeat(2, 200px);
+        gap: 0px 0px;
+        overflow: hidden;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "tituloForm tituloForm tituloForm tituloForm"
+            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
+            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
+            "galeriaRegistro galeriaRegistro formRegistro formRegistro"
+            "galeriaRegistro galeriaRegistro formRegistro formRegistro";
     }
 }
 
@@ -384,6 +478,7 @@ footer {
         width: 150px;
         display: block;
     }
+
     .textoBanner h3 {
         font-family: 'Nunito', sans-serif;
         font-size: 19px;
@@ -402,13 +497,25 @@ footer {
     .acordeon {
         width: 100%;
     }
-    /* .redes li img {
-        height: 30%;
-        display: block;
+
+    footer {
+        height: 140px;
     }
+
+    .contacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .contacto li a {
-        display: block;
-    } */
+        display: flex;
+    }
+
+    .redes li img {
+        height: 80%;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -416,6 +523,7 @@ footer {
         width: 120px;
         display: block;
     }
+
     .textoBanner h3 {
         font-family: 'Nunito', sans-serif;
         font-size: 19px;
@@ -431,8 +539,12 @@ footer {
         font-size: 17px;
     }
 
-    .listaMenu li a, .contacto li a {
+    .listaMenu li a,
+    .contacto li a {
         font-size: 12px;
-}
+    }
 
+    .redes li img {
+        height: 60%;
+    }
 }
