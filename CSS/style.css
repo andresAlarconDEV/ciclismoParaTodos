@@ -295,6 +295,102 @@ footer {
     display: inline-block;
 }
 
+/* CICLISTAS */
+.tituloCiclistaInter h2 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 70px;
+}
+
+.imagenesCiclistas {
+    display: flex;
+    width: 90%;
+    height: 430px;
+    overflow: hidden;
+    margin: auto;
+}
+.imagenesCiclistas img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: grayscale(0.4);
+    filter: contrast(80%);
+    transition: 0.5s ease-in-out;
+}
+.imagenesCiclistas img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    transform: scale(1.2);    
+}
+.descripCiclistas {
+    display: flex;
+    width: 90%;
+    height: 430px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 0;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: #ffffff11;
+    backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(209, 213, 219, 0.3);
+    -webkit-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+}
+
+.posicionCiclista1 {
+    color: gold;
+    text-align: center;
+    font-size: 30px;
+}
+.posicionCiclista2 {
+    color: silver;
+    text-align: center;
+    font-size: 30px;
+}
+.posicionCiclista3 {
+    color: #CD7F32;
+    text-align: center;
+    font-size: 30px;
+}
+.posicionCiclista4, .posicionCiclista5 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.nombreCiclista {
+    color: #ffb26b;
+    text-align: center;
+    font-size: 25px;
+}
+
+.rankingInter {
+    padding-top: 50px;
+}
+.rankingCO {
+    display: flex;
+    flex-direction: column;
+}
+.tablaRankingUCICO {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
 /* GRUPETA */
 
 
@@ -328,19 +424,31 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-}
+    text-align: center;
 
+}
 
 .tituloTxt {
     color: white;
-    -webkit-text-stroke: 2px #ffb26b; 
+    -webkit-text-stroke: 2px #ffb26b;
 }
 
-.tituloTxt h1{
+.subtituloTxt {
+    color: white;
+    text-align: center;
+}
+
+.tituloTxt h1 {
     font-size: 70px;
     font-weight: bold;
 }
+
+.descripTexto {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
 
 .descripcionRegistro {
     grid-area: descripcionRegistro;
@@ -377,11 +485,16 @@ footer {
     background: #ffffff11;
     backdrop-filter: blur(5px);
     border: 0.1px solid rgba(209, 213, 219, 0.3);
-    -webkit-box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
-    -moz-box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
-    box-shadow: 10px 12px 26px -13px rgba(117,117,117,1);
-
+    -webkit-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
 }
+
+.botonRegistro {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .carousel-item.active img {
@@ -390,16 +503,45 @@ footer {
     object-fit: cover;
 }
 
-.carousel, .carousel-inner, .carousel-item {
+.carousel,
+.carousel-inner,
+.carousel-item {
     width: 100%;
     height: 100%;
+}
+
+/* Tiendas */
+/* falta el titulo */
+.tiendas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cuadroTienda {
+    padding: 0px 10px 0px 10px;
 }
 /* ////////////////////////////////////////////////// */
 /* MEDIA Responsive */
 /* ////////////////////////////////////////////////// */
 
+@media (max-width: 1162px) {
+    .gridGrupeta {
+        grid-template-rows: 230px 170px 400px repeat(2,270px);
+        grid-template-areas:
+            "tituloForm tituloForm tituloForm tituloForm"
+            "descripcionRegistro descripcionRegistro descripcionRegistro descripcionRegistro"
+            "galeriaRegistro galeriaRegistro galeriaRegistro galeriaRegistro"
+            "formRegistro formRegistro formRegistro formRegistro"
+            "formRegistro formRegistro formRegistro formRegistro";
+    }
+}
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     /* .headerClase {
         align-items: flex-start;
     } */
@@ -456,21 +598,15 @@ footer {
     .redes li img {
         height: 100%;
     }
-    .gridGrupeta {
 
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(3, 100px) repeat(2, 200px);
-        gap: 0px 0px;
-        overflow: hidden;
-        grid-auto-flow: column;
-        grid-template-areas:
-            "tituloForm tituloForm tituloForm tituloForm"
-            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
-            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
-            "galeriaRegistro galeriaRegistro formRegistro formRegistro"
-            "galeriaRegistro galeriaRegistro formRegistro formRegistro";
+    .gridGrupeta {
+        grid-template-rows: 230px 200px 400px repeat(2,290px);
     }
+
+    .form {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -516,6 +652,25 @@ footer {
         height: 80%;
     }
 
+    .gridGrupeta {
+        grid-template-rows: 230px 250px 300px repeat(2,470px);
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .tituloTxt h1 {
+        font-size: 40px;
+    }
+
+    .subtituloTxt h2{
+        font-size: 20px;
+    }
+    .descripTexto {
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -546,5 +701,19 @@ footer {
 
     .redes li img {
         height: 60%;
+    }
+    .gridGrupeta {
+        grid-template-rows: 230px 290px 300px repeat(2,500px);
+    }
+
+    .tituloTxt h1 {
+        font-size: 28px;
+    }
+
+    .subtituloTxt h2{
+        font-size: 17px;
+    }
+    .descripTexto {
+        font-size: 12px;
     }
 }

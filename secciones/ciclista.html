@@ -5,67 +5,294 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../imagenes/bici.png">
+    <link rel="shortcut icon" href="./imagenes/bici.png">
     <title>Inicio - Cilismo Para Todos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <!--  -->
     <header>
-        <img id="imagenLogo" src="../imagenes/logo.png" alt="logo">
-        <nav>
-            <ul id="listaMenu">
-                <li class="headerMenu"><a href="../index.html" id="inicio">Inicio</a></li>
-                <li class="headerMenu"><a href="./carrera.html">Carreras</a></li>
-                <li class="headerMenu"><a href="./ciclista.html">Ciclistas</a></li>
-                <li class="headerMenu"><a href="./grupeta.html">Grupeta</a></li>
-                <li class="headerMenu"><a href="./tienda.html">Tiendas Recomendadas</a></li>
-            </ul>
-        </nav>
+        <div class="headerClase">
+            <a href="#"><img class="imagenLogo" href="../index.html" src="../imagenes/logo.png" alt="logoImagen"> </a>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary dropdown-menu" data-bs-theme="dark">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav listaMenu">
+                            <li class="headerMenu"><a href="../index.html" id="inicio">Inicio</a></li>
+                            <li class="headerMenu"><a href="./carrera.html">Carreras</a></li>
+                            <li class="headerMenu"><a href="./ciclista.html">Ciclistas</a></li>
+                            <li class="headerMenu"><a href="./grupeta.html">Grupeta</a></li>
+                            <li class="headerMenu"><a href="./tienda.html">Tiendas Recomendadas</a></li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <div>
-            <img id='imagenPogacar' src="../imagenes/pogacar.jpg" alt="Pogacar">
-            <img id='imagenVanAert' src="https://thumbs.dreamstime.com/b/wout-van-aert-tour-de-france-stage-lure-la-planche-des-belles-filles-fra-wout-van-aert-stage-le-tour-de-france-196759074.jpg" alt="VanAert">
-            <img id='imagenEvenepoel' src="https://www.esciclismo.com/actualidad/imagenes/b/remco-evenepoel-pre-uae-tour-2023-soudalqs-press.jpg" alt="Evenepoel">
+        <div class="internacional">
+            <div class="tituloCiclistaInter tituloTxt">
+                <h2>CICLISTAS INTERNACIONES</h2>
+            </div>
+            <section class="imagenesCiclistas">
+                <img class='imagenPogacar' src="../imagenes/pogacar.jpg" alt="Pogacar">
+                <img class='imagenVanAert' src="../imagenes/vanAert.jpg" alt="VanAert">
+                <img class='imagenEvenepoel' src="../imagenes/evenepoel.jpg" alt="Evenepoel">
+                <img class='imagenVingegaard' src="../imagenes/vingegaard.jpg" alt="Vingegaard">
+                <img class='imagenVanDerPoel' src="../imagenes/vanDerPoel.jpg" alt="VanDerPoel">
+            </section>
+            <section class="descripCiclistas">
+                <div class="descripcion">
+                    <div class="posicionCiclista1 negrita">1</div>
+                    <div class="nombreCiclista negrita">TADEJ POGACAR</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Eslovenia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 21 de septiembre de 1998
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 24 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ciclocrós y ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> UAE Team Emirates</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> Tercer lugar Vuelta a España
+                        (2019), campeon Tour de Francia (2020 y 2021), segundo lugar Tour de Francia (2022)</div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista2 negrita">2</div>
+                    <div class="nombreCiclista negrita">WOUT VAN AERT</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Bélgica</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 15 de septiembre de 1994
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 28 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ciclocrós y ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Team Jumbo-Visma</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> Abandono (2019), 20° lugar
+                        (2020), 19° lugar (2021), 21° lugar (2022) en Tour de Francia (2020 y 2021)</div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista3 negrita">3</div>
+                    <div class="nombreCiclista negrita">REMCO EVENEPOEL</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Bélgica</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 25 de enero de 2000
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 23 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Soudal Quick-Step</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> Abandono Giro de Italia
+                        (2021), campeón en Vuelta a España (2022)</div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista4 negrita">4</div>
+                    <div class="nombreCiclista negrita">JONAS VINGEGAARD</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Dinamarca</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 10 de diciembre de 1996
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 26 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Team Jumbo-Visma</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> 46° lugar Vuelta a España
+                        (2020),
+                        2° lugar Tour de Fracia (2021), campeón Tour de Francia (2022)</div>
+                </div>
 
+                <div class="descripcion">
+                    <div class="posicionCiclista5 negrita">5</div>
+                    <div class="nombreCiclista negrita">VAN DER POEL</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Bélgica</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 19 de enero de 1995
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 28 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta, montaña y ciclocrós</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Alpecin-Fenix</div>
+                    <div class="datoCiclista"><span class="negrita">Campeonato Mundial Ciclocrós:</span> campeon mundial
+                        (2015, 2019, 2020, 2021, 2023),
+                        2° lugar (2017), 3° lugar (2018)</div>
+                </div>
+            </section>
+            <div class='subtituloTxt rankingInter'>
+                <h2>RANKING UCI INTERNACIONAL</h2>
+                <iframe src="https://firstcycling.com/widget/ranking.php?lang=ESP" width="50%" height="410"
+                    scrolling="no" frameborder="0"></iframe>
+            </div>
         </div>
-        
-        
-        <div>
-            <h2>RANKING UCI </h2>
-            <iframe src="https://firstcycling.com/widget/ranking.php?lang=ESP" width="50%" height="410" scrolling="no"
-                frameborder="0"></iframe>
-        </div>
+        <div class="nacional">
+            <div class="tituloCiclistaInter tituloTxt">
+                <h2>CICLISTAS NACIONALES</h2>
+            </div>
+            <section class="imagenesCiclistas">
+                <img class='imagenHiguita' src="../imagenes/higuita.jpg" alt="Higuita">
+                <img class='imagenMartinez' src="../imagenes/martinez.jpg" alt="Martinez">
+                <img class='imagenLopez' src="../imagenes/lopez.jpg" alt="Lopez">
+                <img class='imagenChaves' src="../imagenes/chaves.jpg" alt="Chaves">
+                <img class='imagenGaviria' src="../imagenes/gaviria.jpg" alt="Gaviria">
+            </section>
+            <section class="descripCiclistas">
+                <div class="descripcion">
+                    <div class="posicionCiclista1 negrita">1</div>
+                    <div class="nombreCiclista negrita">SERGIO HIGUITA</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 1 de agosto de 1997
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 25 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Bora-Hansgrohe</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> 14° lugar Vuelta a España
+                        (2019), Abandono (2020) y 25° lugar (2021) Tour de Francia, 23° lugar (2022) Vuelta a España.
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista2 negrita">2</div>
+                    <div class="nombreCiclista negrita">DANIEL MARTINEZ</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 25 de abril de 1996
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 26 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> INEOS Grenadiers</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> 5° lugar (2021) Giro de
+                        Italia,
+                        29° lugar (2022) Tour de Francia.</div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista3 negrita">3</div>
+                    <div class="nombreCiclista negrita">MIGUEL ÁNGEL LÓPEZ</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 4 de febrero de 1994
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 29 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Team Medellín-EPM</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> 4° lugar (2022) Vuelta a
+                        España,
+                        Abandono (2022) Giro de Italia</div>
+                </div>
+                <div class="descripcion">
+                    <div class="posicionCiclista4 negrita">4</div>
+                    <div class="nombreCiclista negrita">ESTEBAN CHAVES</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 17 de enero de 1990
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 33 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> EF Education-EasyPost</div>
+                    <div class="datoCiclista"><span class="negrita">Grandes Vueltas:</span> Abandono (2022) Vuelta a
+                        España
+                    </div>
+                </div>
 
-        <div>
-            <h2>RANKING DE COLOMBIANOS EN UCI </h2>
-                <li>Posición COL - Posición Global - Nombre - Puntos</li>
-            <ol id="rankingCOL">
-                <li><a>	8	-	HIGUITA Sergio		-	2.770</a></li>
-                <li><a>	15	-	MARTINEZ Daniel		-	2.213</a></li>
-                <li><a>	63	-	LÓPEZ Miguel Ángel	-	1.000</a></li>
-                <li><a>	85	-	QUINTANA Nairo		-	806</a></li>
-                <li><a>	105	-	GAVIRIA Fernando	-	690</a></li>
-                <li><a>	108	-	CHAVES Esteban		-	673</a></li>
-                <li><a>	109	-	URAN Rigoberto		-	671</a></li>
-                <li><a>	129	-	BUITRAGO Santiago	-	590</a></li>
-                <li><a>	142	-	MOLANO Sebastian	-	545</a></li>
-                <li><a>	166	-	SOSA Ivan			-	484</a></li>
-            </ol>
-            
+                <div class="descripcion">
+                    <div class="posicionCiclista5 negrita">5</div>
+                    <div class="nombreCiclista negrita">FERNANDO GAVIRIA</div>
+                    <div class="datoCiclista"><span class="negrita">Nacionalidad:</span> Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Fecha de Nacimiento:</span> 19 de agosto de 1994
+                    </div>
+                    <div class="datoCiclista"><span class="negrita">Edad:</span> 28 años</div>
+                    <div class="datoCiclista"><span class="negrita">Disciplina:</span> Ruta y pista</div>
+                    <div class="datoCiclista"><span class="negrita">Equipo actual:</span> Movistar Team</div>
+                    <div class="datoCiclista"><span class="negrita"> 128° lugar (2022) Giro de Italia</div>
+                </div>
+            </section>
+            <div class="rankingCO">
+                <div class='subtituloTxt rankingInter'>
+                    <h2>COLOMBIANOS RANKING UCI INTERNACIONAL</h2>
+                </div>
+                <div class="tablaRankingUCICO">
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">POS (Internacional)</th>
+                                <th scope="col">Corredor</th>
+                                <th scope="col">Equipo</th>
+                                <th scope="col">Puntos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td>HIGUITA Sergio</td>
+                                <td>BORA-hansgrohe</td>
+                                <td>1.904</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">34</th>
+                                <td>MARTINEZ Daniel</td>
+                                <td>INEOS Grenadiers</td>
+                                <td>1.266</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">54</th>
+                                <td>LÓPEZ Miguel Ángel</td>
+                                <td>Team Medellin-EPM</td>
+                                <td>1.067</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">79</th>
+                                <td>CHAVES Esteban</td>
+                                <td>EF Education-EasyPost</td>
+                                <td>805</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">91</th>
+                                <td>GAVIRIA Fernando</td>
+                                <td>Movistar Team</td>
+                                <td>740</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">96</th>
+                                <td>URAN Rigoberto</td>
+                                <td>EF Education-EasyPost</td>
+                                <td>698</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">120</th>
+                                <td>MOLANO Sebastian</td>
+                                <td>UAE Team Emirates</td>
+                                <td>611</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">124</th>
+                                <td>BUITRAGO Santiago</td>
+                                <td>Bahrain Victorious</td>
+                                <td>600</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">136</th>
+                                <td>QUINTANA Nairo</td>
+                                <td>Sin contrato</td>
+                                <td>550</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">156</th>
+                                <td>SOSA Ivan</td>
+                                <td>Movistar Team</td>
+                                <td>500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
         </div>
     </main>
     <footer>
-        <nav>
-            <ol id="contacto">
-                <li><a href="#">Nuestros Datos</a></li>
-                <li><a href="#">Politica de Privacidad</a></li>
-                <li><a href="#">Aviso de Privacidad</a></li>
-                <li><a href="#">Uso del sitio</a></li>
-            </ol>
-            <ul id="redes">
+        <div class="footerClase">
+            <div class="claseIcono">
+                <a href="#"><img class="icono" href="./index.html" src="../imagenes/icono.png" alt="logo"> </a>
+            </div>
+            <nav>
+                <ul class="contacto">
+                    <li><a href="#">Nuestros Datos</a></li>
+                    <li><a href="#">Politica de Privacidad</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Uso del sitio</a></li>
+                </ul>
+            </nav>
+            <ul class="redes claseIcono">
                 <li><a href="#"><img href="#"
                             src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-128.png"
                             alt="twitter"> </a></li>
@@ -79,8 +306,17 @@
                             src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png"
                             alt="Instagram"></a></li>
             </ul>
-        </nav>
+
+        </div>
+        <div>
+            <div class="copyText"><a>&copy;Colombia 2023</a></div>
+
+        </div>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
