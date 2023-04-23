@@ -1,7 +1,0 @@
-Buena noche Tutor.
-
-Actualmente realice las configuraciones requeridas para la entrega 2 en las secciones de index.html y grupeta.html.
-
-La seccion carrera.html esta sin estilo y ciclista.html no tiene responsive, estoy trabajando en ello. por favor omitir.
-
-Gracias por su tiempo.
