@@ -107,7 +107,7 @@ footer {
     background-color: black;
 }
 
-.textoBanner h3 {
+.textoBanner h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 26px;
     color: white;
@@ -119,7 +119,6 @@ footer {
 }
 
 .textoCita {
-    font-size: 8vw;
     color: white;
     width: 60%;
     position: absolute;
@@ -128,6 +127,10 @@ footer {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.textoCita h2 {
+    font-size: 22px;
 }
 
 .claseIcono {
@@ -207,7 +210,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    /* flex-wrap: wrap; */
 }
 
 .logo {
@@ -263,9 +265,6 @@ footer {
     text-align: center;
 }
 
-.imagenCompetencia {
-    height: 800px;
-}
 
 .imagenAguapa {
     height: 200px;
@@ -282,12 +281,17 @@ footer {
     display: inline-block;
 }
 
+.hidden {
+    display: none;
+}
+
 /* CICLISTAS */
 .tituloCiclistaInter h2 {
     font-size: 70px;
-    text-align: center;
     font-weight: bold;
-    padding-top: 70px;
+    text-align: center;
+    margin: 30px;
+
 }
 
 .flexImgDetalles {
@@ -350,6 +354,7 @@ footer {
 .rankingUCI {
     width: 50%;
     height: 410px;
+    background-color: orange;
 }
 .posicionCiclista1 {
     color: gold;
@@ -395,6 +400,12 @@ footer {
     width: 50%;
     margin: auto;
     padding-bottom: 50px;
+}
+.table-light {
+    --bs-table-bg: #ffffff11;
+    color: white;
+    backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(209, 213, 219, 0.3);
 }
 
 /* GRUPETA */
@@ -447,6 +458,8 @@ footer {
 .tituloTxt h1 {
     font-size: 70px;
     font-weight: bold;
+    text-align: center;
+    margin: 30px;
 }
 
 .descripTexto {
@@ -511,7 +524,8 @@ footer {
 
 .carousel,
 .carousel-inner,
-.carousel-item {
+.carousel-item,
+.carruselCarrera {
     width: 100%;
     height: 100%;
 }
@@ -528,8 +542,56 @@ footer {
 }
 
 .cuadroTienda {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 50px 10px;
 }
+
+/* Carreras */
+.competencia {
+    display: flex;
+    height: 800px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    
+}
+
+.carousel-caption {
+    display: flex;
+    color: black;
+    background: #ffffff2f;
+    font-weight: bold;
+    -webkit-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h3, .carousel-caption h4 {
+    font-weight: bold; 
+}
+
+.descripCarreras {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: #ffffff11;
+    backdrop-filter: blur(5px);
+    border: 0.1px solid rgba(209, 213, 219, 0.3);
+    -webkit-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+    box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+}
+
+
+
+
 
 /* ////////////////////////////////////////////////// */
 /* MEDIA Responsive */
@@ -575,15 +637,8 @@ footer {
         display: block;
     }
 
-    .textoBanner h3 {
-        font-family: 'Nunito', sans-serif;
+    .textoBanner h1 {
         font-size: 22px;
-        color: white;
-        width: 80%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .footerClase {
@@ -640,7 +695,7 @@ footer {
 
     .imagenesCiclistas img:hover {
         width: 120%;
-        height: 30%;
+        height: 22%;
         /* transition: 0.5s ease-in-out; */
     }
 
@@ -670,18 +725,11 @@ footer {
         display: block;
     }
 
-    .textoBanner h3 {
-        font-family: 'Nunito', sans-serif;
+    .textoBanner h1 {
         font-size: 19px;
-        color: white;
-        width: 80%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
-    .textoCita h4 {
+    .textoCita h2 {
         font-size: 17px;
     }
 
@@ -752,18 +800,7 @@ footer {
         display: block;
     }
 
-    .textoBanner h3 {
-        font-family: 'Nunito', sans-serif;
-        font-size: 19px;
-        color: white;
-        width: 80%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .textoCita h4 {
+    .textoCita h2 {
         font-size: 17px;
     }
 
@@ -791,4 +828,9 @@ footer {
     .descripTexto {
         font-size: 12px;
     }
+    .flexImgDetalles {
+
+        height: 3600px;
+    }
+
 }

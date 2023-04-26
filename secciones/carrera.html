@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagenes/bici.png">
-    <title>Inicio - Cilismo Para Todos</title>
+    <link rel="shortcut icon" href="../imagenes/bici.png">
+    <title>Carreras | Cilismo Para Todos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="headerClase">
-            <a href="../index.html"><img class="imagenLogo"  src="../imagenes/logo.png" alt="logoImagen"> </a>
+            <a href="../index.html"><img class="imagenLogo" src="../imagenes/logo.png" alt="logoImagen"> </a>
             <nav class="navbar navbar-expand-lg bg-body-tertiary dropdown-menu" data-bs-theme="dark">
                 <div class="container-fluid ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -38,38 +38,73 @@
         </div>
     </header>
     <main>
-        <H1>CARRERAS EN CURSO</H1><br>
-        <div class="competencia">
-            <H2>VOLTA A CATALUNYA</H2>
-            <p>Inicio: 20 de marzo</p>
-            <p>Fin: 26 de marzo</p>
-            <p>Actual Lider: P. Roglic</p><br><br>
-        </div>
-        <div class="competencia">
-            <H2>COPPI E CARTALI</H2>
-            <p>Inicio: 21 de marzo</p>
-            <p>Fin: 25 de marzo</p>
-            <p>Actual Lider: Mauro Schmid</p><br><br>
-        </div>
-        <H1>LAS MAS GRANDES</H1><br><br>
-        <div class="competencia">
-            <H2>GIRO DE ITALIA</H2>
-            <img class="imagenCompetencia" src="https://static2.giroditalia.it/wp-content/uploads/2022/10/UR2QxzmeFaYxIgr2rwTt_181022-111229.jpg?v=20221018131229" alt="giroItalia">
-            <p>Inicio: 6 de mayo</p>
-            <p>Fin: 28 de mayo</p><br><br>
-        </div>
-        <div class="competencia">
-            <H2>TOUR DE FRANCIA</H2>
-            <img class="imagenCompetencia" src="https://img.aso.fr/core_app/img-cycling-tdf-jpg/tdf23-parcours-1080x1080-11oct/43635/0:0,1080:1080-1200-0-70/c629d" alt="tourFrancia">
-            <p>Inicio: 1 de julio</p>
-            <p>Fin: 23 de julio</p><br><br>
-        </div>
-        <div class="competencia">
-            <H2>VUELTA A ESPAÑA</H2>
-            <img class="imagenCompetencia" src="https://img.aso.fr/core_app/img-cycling-vue-jpg/ve23-mapa-recorrido-1080x1350-web/16269/0:0,4500:5625-1200-0-70/118f5" alt="vueltaEspania">
-            <p>Inicio: 26 de agosto</p>
-            <p>Fin: 17 de septiembre</p><br><br>
-        </div>
+        <section>
+            <div class="tituloCiclistaInter tituloTxt">
+                <h1>LAS CARRERAS MAS IMPORTANTES</h1>
+            </div>
+            <div class="competencia">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <section class="carruselCarrera">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../imagenes/giroItalia.jpg" class="h-100" alt="giroItalia">
+                                <div class="carousel-caption d-none d-md-block transparencia">
+                                    <h3>Giro de Italia</h3>
+                                    <h4>Del 6 de mayo a 28 de mayo de 2023.</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/tourFrancia.jpg" class="d-block w-100" alt="tourFrancia">
+                                <div class="carousel-caption d-none d-md-block transparencia">
+                                    <h3>Tour de Francia</h3>
+                                    <h4>Del 1 de julio a 23 de julio de 2023.</h4>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../imagenes/vueltaEspania.jpg" class="d-block w-100" alt="vueltaEspania">
+                                <div class="carousel-caption d-none d-md-block transparencia">
+                                    <h3>Vuelta a España</h3>
+                                    <h4>Del 26 de agosto a 27 de septiembre de 2023</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="carreras">
+                <div class="descripCarreras">
+                    <div class="imagenCarrera"><img
+                            src="https://france3-regions.francetvinfo.fr/image/BR0bJrbsJ2Z-0A3qXIDEtop42Ns/600x400/regions/2023/02/08/63e3e6f18c5fa_sans-titre-10.png"
+                            alt="bretagne"> </div>
+                    <div class="datoCiclista">
+                        <span class="negrita">Nacionalidad:</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carreras">
+
+            </div>
+        </section>
 
 
     </main>
@@ -90,10 +125,10 @@
                 <li><a href="https://twitter.com/?lang=es"><img
                             src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-128.png"
                             alt="twitter"> </a></li>
-                <li><a href="https://www.youtube.com/"><img 
+                <li><a href="https://www.youtube.com/"><img
                             src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-128.png"
                             alt="Youtube"> </a></li>
-                <li><a href="https://www.facebook.com/"><img 
+                <li><a href="https://www.facebook.com/"><img
                             src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-128.png"
                             alt="Facebook"> </a></li>
                 <li><a href="https://www.instagram.com/"><img
