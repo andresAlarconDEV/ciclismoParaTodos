@@ -1,0 +1,25 @@
+@mixin mq1 {
+    @media (max-width: 1162px) {
+        @content;
+    }
+}
+
+
+@mixin mq2 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+
+@mixin mq3 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq4 {
+    @media (max-width: 375px) {
+        @content;
+    }
+}

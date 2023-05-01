@@ -1,0 +1,70 @@
+/* varios usados en distintas secciones*/
+.negrita {
+    font-weight: bold;
+    color: $textoNaranja;
+}
+
+.citaNombre {
+    color: $textoNaranja;
+}
+
+.copyText {
+    color: white;
+    text-align: center;
+}
+
+.transparencia {
+    width: 70%;
+    margin: 30px auto;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: #ffffff11;
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+.tituloTxt {
+    color: white;
+    -webkit-text-stroke: 2px $textoNaranja;
+    h1 {
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px;
+
+        @include mq3 {
+            font-size: 40px;
+        }
+        @include mq4 {
+            font-size: 28px;
+        }
+    }
+}
+
+.subtituloTxt {
+    color: white;
+    text-align: center;
+
+    h2 {
+        @include mq3 {
+            font-size: 20px;
+        }
+        @include mq4 {
+            font-size: 17px;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+            
+                
+.subtituloTxt {
+    color: white;
+    text-align: center;
+}

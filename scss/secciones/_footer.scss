@@ -1,0 +1,120 @@
+footer {
+    background-color: $colorHeader;
+    margin-top: auto;
+    height: 110px;
+    background: linear-gradient(to top, $colorHeader 90%, $colorHeaderGradient);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    @include mq3 {
+        height: 140px;
+    }
+}
+
+
+.footerClase {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    @include mq2 {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .claseIcono {
+        height: 100%;
+
+        @include mq2 {
+            display: none;
+        }
+
+        .icono {
+            height: 100%;
+        }
+    }
+    
+}
+
+.logo {
+    height: 100%;
+    position: relative;
+}
+
+.contacto {
+    padding-left: 0;
+    margin: 0;
+    height: 100%;
+
+    @include mq3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    li {
+        display: inline;
+        padding-right: 20px;
+        padding-left: 20px;
+    
+        a {
+            text-decoration: none;
+            color: white;
+
+            @include mq3 {
+                display: flex;
+            }
+
+            @include mq4 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.redes {
+    padding-left: 0;
+    margin: 0;
+    height: 100%;
+
+    @include mq2 {
+        display: flex;
+        height: 50%;
+    }
+    li {
+        display: inline;
+        padding-right: 5px;
+        padding-left: 5px;
+        
+        a{
+            text-decoration: none;
+        }
+    
+        img {
+            height: 50%;
+            @include mq2 {
+                height: 100%;
+            }
+            @include mq3 {
+                height: 80%;
+            }
+            @include mq4 {
+                height: 60%;
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+
+
+

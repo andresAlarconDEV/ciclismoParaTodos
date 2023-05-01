@@ -1,0 +1,131 @@
+
+.grupetaForm {
+    width: 90%;
+    margin: auto;
+    padding: 0% 2% 3% 2%;
+
+    .gridGrupeta {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 300px repeat(2, 100px) repeat(2, 200px);
+        gap: 0px 0px;
+        overflow: hidden;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "tituloForm tituloForm tituloForm tituloForm"
+            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
+            "descripcionRegistro descripcionRegistro formRegistro formRegistro"
+            "galeriaRegistro galeriaRegistro formRegistro formRegistro"
+            "galeriaRegistro galeriaRegistro formRegistro formRegistro";
+
+            @include mq1 {
+                grid-template-rows: 280px 170px 400px repeat(2, 270px);
+                grid-template-areas:
+                    "tituloForm tituloForm tituloForm tituloForm"
+                    "descripcionRegistro descripcionRegistro descripcionRegistro descripcionRegistro"
+                    "galeriaRegistro galeriaRegistro galeriaRegistro galeriaRegistro"
+                    "formRegistro formRegistro formRegistro formRegistro"
+                    "formRegistro formRegistro formRegistro formRegistro";
+            }
+            
+            @include mq2 {
+                    grid-template-rows: 400px 200px 400px repeat(2, 290px);
+            }
+
+            @include mq3 {
+                    grid-template-rows: 230px 250px 300px repeat(2, 470px);
+            }
+
+            @include mq4 {
+                    grid-template-rows: 230px 290px 300px repeat(2, 500px);
+            }
+
+            .tituloForm {
+                grid-area: tituloForm;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+            }
+            
+            .descripcionRegistro {
+                grid-area: descripcionRegistro;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .descripTexto {
+                    font-size: 18px;
+                    color: white;
+                    font-weight: bold;
+                    @include mq2 {
+                        font-size: 15px;
+                    }
+                    @include mq4 {
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+            .galeriaRegistro {
+                grid-area: galeriaRegistro;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                -webkit-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+                box-shadow: 18px 0px 23px 1px rgba(0, 0, 0, 0.75);
+
+                .carousel,
+                .carousel-inner,
+                .carousel-item,
+                .carruselCarrera {
+                    width: 100%;
+                    height: 100%;
+
+                    .carousel-item.active img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .formRegistro {
+                grid-area: formRegistro;
+                display: flex;
+
+                .form {
+                    width: 80%;
+                    margin: auto;
+                    margin-top: auto;
+                    padding: 2rem;
+                    border-radius: 1rem;
+                    font-size: 1rem;
+                    color: white;
+                    background: #ffffff11;
+                    backdrop-filter: blur(5px);
+                    border: 0.1px solid rgba(209, 213, 219, 0.3);
+                    -webkit-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+                    -moz-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+                    box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+
+                    @include mq2 {
+                        width: 90%;
+                    }
+                    @include mq3 {
+                        width: 100%;
+                    }
+                    .botonRegistro {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
