@@ -487,14 +487,18 @@ footer {
 .grupetaForm .gridGrupeta .galeriaRegistro .carousel,
 .grupetaForm .gridGrupeta .galeriaRegistro .carousel-inner,
 .grupetaForm .gridGrupeta .galeriaRegistro .carousel-item,
-.grupetaForm .gridGrupeta .galeriaRegistro .carruselCarrera {
+.grupetaForm .gridGrupeta .galeriaRegistro .carruselCarrera,
+.grupetaForm .gridGrupeta .galeriaRegistro .active {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.grupetaForm .gridGrupeta .galeriaRegistro .carousel .carousel-item.active img,
-.grupetaForm .gridGrupeta .galeriaRegistro .carousel-inner .carousel-item.active img,
-.grupetaForm .gridGrupeta .galeriaRegistro .carousel-item .carousel-item.active img,
-.grupetaForm .gridGrupeta .galeriaRegistro .carruselCarrera .carousel-item.active img {
+.grupetaForm .gridGrupeta .galeriaRegistro .carousel img,
+.grupetaForm .gridGrupeta .galeriaRegistro .carousel-inner img,
+.grupetaForm .gridGrupeta .galeriaRegistro .carousel-item img,
+.grupetaForm .gridGrupeta .galeriaRegistro .carruselCarrera img,
+.grupetaForm .gridGrupeta .galeriaRegistro .active img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -601,6 +605,18 @@ footer {
   filter: contrast(80%);
   transition: 0.5s ease-in-out;
 }
+.internacional .flexImgDetalles .imagenesCiclistas img:hover, .nacional .flexImgDetalles .imagenesCiclistas img:hover {
+  width: 100px;
+  opacity: 1;
+  filter: contrast(120%);
+  transform: scale(1.2);
+}
+@media (max-width: 991px) {
+  .internacional .flexImgDetalles .imagenesCiclistas img:hover, .nacional .flexImgDetalles .imagenesCiclistas img:hover {
+    width: 100%;
+    height: 20%;
+  }
+}
 @media (max-width: 991px) {
   .internacional .flexImgDetalles .imagenesCiclistas img, .nacional .flexImgDetalles .imagenesCiclistas img {
     height: 20%;
@@ -611,17 +627,6 @@ footer {
     filter: grayscale(0.4);
     filter: contrast(80%);
     transition: 0.5s ease-in-out;
-  }
-}
-.internacional .flexImgDetalles .imagenesCiclistas img:hover, .nacional .flexImgDetalles .imagenesCiclistas img:hover {
-  width: 100%;
-  opacity: 1;
-  filter: contrast(120%);
-  transform: scale(1.2);
-}
-@media (max-width: 991px) {
-  .internacional .flexImgDetalles .imagenesCiclistas img:hover, .nacional .flexImgDetalles .imagenesCiclistas img:hover {
-    height: 20%;
   }
 }
 .internacional .flexImgDetalles .descripCiclistas, .nacional .flexImgDetalles .descripCiclistas {
@@ -765,11 +770,13 @@ footer {
   overflow: hidden;
   margin: auto;
 }
-.competencia .carousel, .competencia .carousel-inner, .competencia .carousel-item, .competencia .carruselCarrera {
+.competencia .carousel, .competencia .carousel-inner, .competencia .carousel-item, .competencia .carruselCarrera, .competencia .active {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.competencia .carousel .carousel-item.active img, .competencia .carousel-inner .carousel-item.active img, .competencia .carousel-item .carousel-item.active img, .competencia .carruselCarrera .carousel-item.active img {
+.competencia .carousel img, .competencia .carousel-inner img, .competencia .carousel-item img, .competencia .carruselCarrera img, .competencia .active img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
