@@ -85,6 +85,7 @@ const usuarios = [
     email: "coderhouse.test@gmail.com",
   },
 ];
+let pedidos = [];
 let ArrayCarrito = JSON.parse(localStorage.getItem("prodCarrito")) || [];
 let totalPrecio = ArrayCarrito.reduce(
   (acum, actual) => acum + actual.precio,
@@ -93,6 +94,7 @@ let totalPrecio = ArrayCarrito.reduce(
 let totalProductos = ArrayCarrito.length;
 let validarUsuario = {};
 let listaMostrarCarrito;
+let guardar = 1;
 
 const estadoCarrito = document.getElementById("estadoCarrito");
 const tablaResumenCarrito = document.getElementById("tablaResumenCarrito");
@@ -129,7 +131,38 @@ eliminarCarrito.addEventListener("click", () => {
 })
 
 confirmarPedido.addEventListener("click", () => {
-    Swal.fire({
+  let nombre = document.getElementById("nombre").value;
+  let telCel = document.getElementById("telCel").value;
+  let ciudad = document.getElementById("ciudad").value;
+  let direccion = document.getElementById("direccion").value;
+  let email = document.getElementById("email").value;
+  
+  if(!nombre) {
+    guardar = 0;
+    document.getElementById("divnombre").classList.remove("hidden");
+  }
+  if(!telCel) {
+    guardar = 0;
+    document.getElementById("divtelCel").classList.remove("hidden");
+  }
+
+  if(!ciudad) {
+    guardar = 0;
+    document.getElementById("divciudad").classList.remove("hidden");
+  }
+
+  if(!direccion) {
+    guardar = 0;
+    document.getElementById("divdireccion").classList.remove("hidden");
+  }
+
+  if(!email) {
+    guardar = 0;
+    document.getElementById("divemail").classList.remove("hidden");
+  }
+
+  if(guardar===1){
+  Swal.fire({
         position: 'center',
         icon: 'success',
         title: 'Pedido realizado correctamente',
@@ -139,6 +172,7 @@ confirmarPedido.addEventListener("click", () => {
       })
       localStorage.removeItem('prodCarrito');
         setTimeout(() => {location.reload();},5000);
+  }
 })
 
 
