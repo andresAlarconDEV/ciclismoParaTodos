@@ -9,7 +9,7 @@
     <meta name="description" content="Te recomendaremos algunas tiendas que por experiencias propias podemos asegurarnos que realizaras
     una compra que cumpla tus necesidades y te sientas comodo">
     <link rel="shortcut icon" href="../imagenes/bici.png">
-    <title>Tiendas Recomendadas | Cilismo Para Todos</title>
+    <title>Tienda | Cilismo Para Todos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -31,7 +31,8 @@
                             <li class="headerMenu"><a href="./carrera.html">Carreras</a></li>
                             <li class="headerMenu"><a href="./ciclista.html">Ciclistas</a></li>
                             <li class="headerMenu"><a href="./grupeta.html">Grupeta</a></li>
-                            <li class="headerMenu"><a href="./tienda.html">Tiendas Recomendadas</a></li>
+                            <li class="headerMenu"><a href="./tienda.html">Tienda</a></li>
+                            <li class="headerMenu"><a href="./carrito.html"><img class="carrito" id="carrito" src="../imagenes/carrito.png" alt="icocarrito"><p class="conteo"></p></a></li>
                             </li>
 
                         </ul>
@@ -43,72 +44,122 @@
     <main>
         <div class="tituloForm">
             <div class="tituloTxt">
-                <h1>TIENDAS RECOMENDADAS</h1>
+                <h1>TIENDA</h1>
             </div>
             <div class="subtituloTxt">
                 <h2>sabemos que deseas comprar distintos implementos para que rodar en bicicleta sea comodo y te sientas
-                    espectacular, por lo cual queremos recomendarte algunas
-                    tiendas online para distintos presupuestos.</h2>
+                    espectacular, por lo cual tenemos los mejores productos para tu comodidad y presupuesto.</h2>
             </div>
         </div>
         <div class="tiendas">
             <div class="cuadroTienda">
-                <div class="card" style="width: 18rem;">
-                    <img src="../imagenes/aguapa.jpg" class="card-img-top" alt="logoAguapa">
-                    <div class="card-body">
-                        <h5 class="card-title">AGUAPA BIKE</h5>
-                        <p class="card-text">"Tienda Colombiana que tomando como ventaja el ADN ciclístico colombiano
-                            que ha competido durante décadas en los más importantes pelotones del mundo."</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Jersey desde $80.000</li>
-                        <li class="list-group-item">Badana desde $67.000</li>
-                        <li class="list-group-item">Guantes desde $27.000</li>
-                        <li class="list-group-item">rompevientos $66.000</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://aguapa.com.co/" class="card-link">Visita a Aguapa</a>
-                    </div>
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/badanaClasicaNegra.png"
+                        alt="badanaClasicaNegra">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Badana Clasica Negra</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción </span>Licra poliéster, tela grabada • Protección UV • Badana en gel • Tirantes en Malla</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $61.500 COP </div>
+                    <button type="button" class="btn btn-light botonAddCarrito" id="botonProd1" value="001" onclick="addCarrito(value)">Agregar a Carrito</button>
                 </div>
             </div>
             <div class="cuadroTienda">
-                <div class="card" style="width: 18rem;">
-                    <img src="../imagenes/gorigogo.png" class="card-img-top" alt="logoGoRigoGo">
-                    <div class="card-body">
-                        <h5 class="card-title">GORIGOGO</h5>
-                        <p class="card-text">"Nos dedicamos a transmitir la pasión por el ciclismo a través de un amplio
-                            portafolio de productos, innovadores y de excelente calidad."</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Jersey desde $104.000</li>
-                        <li class="list-group-item">Badana desde $191.200</li>
-                        <li class="list-group-item">Chalecos desde $111.300</li>
-                        <li class="list-group-item">Zapatiilas, cascos, y mas...</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://www.gorigogo.com/" class="card-link">Visita a GoRigoGo</a>
-                    </div>
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/badanaClasicaAzul.png"
+                        alt="badanaClasicaAzul">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Badana Clasica Azul</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción </span>Licra poliéster • Badana en gel • (Recorridos de 3 a 4 horas aproximadamente) • Protección UV</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $61.500 COP </div>
+                    <button type="button" class="btn btn-light" value="002" onclick="addCarrito(value)">Agregar a Carrito</button>
                 </div>
             </div>
             <div class="cuadroTienda">
-                <div class="card" style="width: 18rem;">
-                    <img src="../imagenes/gw.png" class="card-img-top" alt="logoGW">
-                    <div class="card-body">
-                        <h5 class="card-title">GW Cycles</h5>
-                        <p class="card-text">"Si eres un ciclista experimentado o si acabas de empezar ¡tenemos todo lo
-                            que necesitas! La calidad y el rendimiento son nuestra prioridad número uno."</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Jersey desde $94.000</li>
-                        <li class="list-group-item">Badana desde $152.200</li>
-                        <li class="list-group-item">Chalecos desde $60.000</li>
-                        <li class="list-group-item">Bicicletas para todos los gustos</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://www.gorigogo.com/" class="card-link">Visita a GW</a>
-                    </div>
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/badanaClasicaBlanca.png"
+                        alt="badanaClasicaBlanca">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Badana Clasica Blanca</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span>Licra poliéster, tela grabada • Protección UV • Badana en gel • (Para Recorridos superiores a 5 horas)</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $89.000 COP </div>
+                    <button type="button" class="btn btn-light" value="003" onclick="addCarrito(value)" >Agregar a Carrito</button>
                 </div>
             </div>
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/badanaClasicaGris.png"
+                        alt="badanaClasicaGris">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Badana Clasica Gris</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> Licra poliéster • Badana en gel • (Recorridos de 3 a 4 horas) • Tirantes en malla • Protección UV </div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $61.500 COP </div>
+                    <button type="button" class="btn btn-light" value="004" onclick="addCarrito(value)" >Agregar a Carrito</button>
+                </div>
+            </div>
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/cortavientos.png"
+                        alt="cortavientos">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Cortavientos</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> Tela semi-impermeable • Banda Siliconada parte baja • Cremallera reflectiva • Línea reflectiva en la espalda.</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $53.000 COP </div>
+                    <button type="button" class="btn btn-light" value="005" onclick="addCarrito(value)">Agregar a Carrito</button>
+                </div>
+            </div>
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/cascoPOCNegro.png"
+                        alt="cascoPOCNegro">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Casco POC</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> casco completo con carcasa unibody completamente con un forro de EPS para el equilibrio ideal entre peso y protección.</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $999.000 COP </div>
+                    <button type="button" class="btn btn-light" value="006" onclick="addCarrito(value)">Agregar a Carrito</button>
+                </div>
+            </div> 
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/jerseyColombia_1.png"
+                        alt="jerseyColombia">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Jersey Colombia</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> Está diseñada para satisfacer las exigencias de aquellas personas que buscan versatilidad y la máxima comodidad.</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $195.000 COP </div>
+                    <button type="button" class="btn btn-light" value="007" onclick="addCarrito(value)">Agregar a Carrito</button>
+                </div>
+            </div>   
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/jerseyGiro.png"
+                        alt="jerseyGiro">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Jersey Giro</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> tipo de tejido más flexible, mangas en corte limpio que hace la prenda más ligera y aerodinámica</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $299.000 COP </div>
+                    <button type="button" class="btn btn-light" value="008" onclick="addCarrito(value)">Agregar a Carrito</button>
+                </div>
+            </div>   
+            <div class="cuadroTienda">
+                <div class="imagenTienda"><img
+                        src="../imagenes/productos/jerseyTour.png"
+                        alt="jerseyTour">
+                </div>
+                <div class="descripTienda">
+                    <div class="nombreTienda negrita">Jersey Tour</div>
+                    <div class="datoCiclista"><span class="negrita">Descripción</span> creado con tejidos de alto rendimiento. Cuenta con máxima transpirabilidad y comodidad con cada uso.</div>
+                    <div class="datoCiclista"><span class="negrita">Precio</span> $250.000 COP </div>
+                    <button type="button" class="btn btn-light" value="009" onclick="addCarrito(value)">Agregar a Carrito</button>
+                </div>
+            </div>            
         </div>
     </main>
     <footer>
@@ -146,6 +197,8 @@
         </div>
 
     </footer>
+    <script src="../js/tienda.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

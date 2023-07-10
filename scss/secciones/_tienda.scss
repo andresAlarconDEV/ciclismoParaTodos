@@ -9,9 +9,51 @@
     align-items: flex-start;
 
     .cuadroTienda {
-        padding: 0px 10px 50px 10px;
-    }
-    
+        justify-content: space-evenly;
+        width: 18rem;
+        height: 500px;
+        object-fit: cover; 
+        padding: 10px;
+        border-radius: 1rem;
+        font-size: 1rem;
+        color: white;
+        background: #ffffff11;
+        backdrop-filter: blur(5px);
+        margin: 0 10px 50px 10px;
+        border: 0.1px solid rgba(209, 213, 219, 0.3);
+        -webkit-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+        -moz-box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+        box-shadow: 10px 12px 26px -13px rgba(117, 117, 117, 1);
+        flex-direction: column;
+
+        .imagenTienda {
+            width: 90%;
+            height: 50%;
+            margin: 15px auto;
+            overflow: hidden;
+            object-fit: cover;
+            img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+        }
+        .descripTienda {
+            display: flex;
+            width: 90%;
+            height: 40%;
+            margin: auto;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .nombreTienda {
+                color: $textoNaranja;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+}
 }
 
 
