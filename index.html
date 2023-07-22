@@ -33,7 +33,10 @@
                             <li class="headerMenu"><a href="./secciones/ciclista.html">Ciclistas</a></li>
                             <li class="headerMenu"><a href="./secciones/grupeta.html">Grupeta</a></li>
                             <li class="headerMenu"><a href="./secciones/tienda.html">Tienda</a></li>
-                            <li class="headerMenu"><a href="./secciones/carrito.html"><img class="carrito" id="carrito" src="./imagenes/carrito.png" alt="icocarrito"><p class="conteo"></p></a></li>
+                            <li class="headerMenu"><a href="./secciones/carrito.html"><img class="carrito" id="carrito"
+                                        src="./imagenes/carrito.png" alt="icocarrito">
+                                    <p class="conteo"></p>
+                                </a></li>
                         </ul>
                     </div>
                 </div>
@@ -202,6 +205,15 @@
             </div>
             <!-- <a href="./index.html#inicio">volver arriba</a> -->
         </section>
+        <div class="clima hidden" id="clima">
+            <div class="recoClima" id="recoClima">
+            </div>
+            <button onclick="mostrarReco()">
+                <div class="estadoClima" id="estadoClima">
+                    <img id="imgClima"class="estadoClima-icono" alt="iconoClima">
+                </div>
+            </button>
+        </div>
     </main>
     <footer>
         <div class="footerClase">
@@ -235,9 +247,6 @@
         <div>
             <div class="copyText"><a>&copy;Colombia 2023</a></div>
 
-        </div>
-        <div class="estadoClima">
-            <img class="estadoClima-icono" src="./imagenes/llovizna.png" alt="iconoClima">
         </div>
     </footer>
     <script src="./js/index.js"></script>
