@@ -21,12 +21,11 @@ const codigoClima = [{
     "codigo": [800, 801, 802, 803, 804] 
     }
     ]
-
 let ArrayCarrito = JSON.parse(localStorage.getItem("prodCarrito")) || [];
 let totalProductos = ArrayCarrito.length;
-document.getElementsByClassName('conteo')[0].innerHTML=totalProductos;
 let reco = true, mensaje;
-
+let recomendacion = document.getElementsByClassName('recomendacion')[0];
+document.getElementsByClassName('conteo')[0].innerHTML=totalProductos;
 
 window.addEventListener('load', function (){
     navigator.geolocation.getCurrentPosition(getLocOk, getLocError);
@@ -42,7 +41,7 @@ function getLocOk(pos) {
     // renderReco('a03n');
 }
 
-function getLocError(err) {
+function getLocError() {
     console.log('para visualizar las recomendaciones del clima se debe aceptar la detección de ubicación');
 }
 
@@ -66,7 +65,7 @@ function renderReco(res){
     document.getElementById('descripcion').innerHTML=res.weather.description;
     document.getElementById('ubicacion').innerHTML=res.city_name;
     
-    res.pod=="n" ? document.getElementsByClassName('recomendacion')[0].innerHTML='Recuerda siempre ser visible para autos' : document.getElementsByClassName('recomendacion')[0].innerHTML=msjReco(res.weather.code);
+    res.pod=="n" ? recomendacion.innerHTML='Recuerda siempre ser visible para autos' : recomendacion.innerHTML=msjReco(res.weather.code);
     // console.log(res);
 }
 
