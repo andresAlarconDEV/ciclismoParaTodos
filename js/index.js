@@ -1,9 +1,31 @@
 const token = 'a8d5faffbdcd4efea4debd47b895bcd1';
-const codTormenta = [200, 201, 202, 230, 231, 232, 233]
+const codigoClima = [{
+    "id": '1',
+    "nombre": "tormenta",
+    "mensaje": "Es mejor postergar la salida en Bici",
+    "codigo": [200, 201, 202, 230, 231, 232, 233] 
+    },
+    {"id": '2',
+    "nombre": "lluvia",
+    "mensaje": "Sal abrigado y con ropa impermeable",
+    "codigo": [300, 301, 302, 500, 501, 502, 511, 520, 521, 522, 700, 711, 721, 731, 741, 751] 
+    },
+    {"id": '3',
+    "nombre": "nieve",
+    "mensaje": "Las calles pueden tener nieve, aplaza la salida",
+    "codigo": [600, 601, 602, 610, 611, 612, 621, 622, 623] 
+    },
+    {"id": '4',
+    "nombre": "sol",
+    "mensaje": "Hidrátate y aplica protector solar",
+    "codigo": [800, 801, 802, 803, 804] 
+    }
+    ]
+
 let ArrayCarrito = JSON.parse(localStorage.getItem("prodCarrito")) || [];
 let totalProductos = ArrayCarrito.length;
 document.getElementsByClassName('conteo')[0].innerHTML=totalProductos;
-let reco = true;
+let reco = true, mensaje;
 
 
 window.addEventListener('load', function (){
@@ -44,11 +66,16 @@ function renderReco(res){
     document.getElementById('descripcion').innerHTML=res.weather.description;
     document.getElementById('ubicacion').innerHTML=res.city_name;
     
-    res.pod=="n" ? document.getElementsByClassName('recomendacion')[0].innerHTML='Recuerda siempre ser visible para autos' : msjReco(res.weather.code);
-
-    console.log(res);
+    res.pod=="n" ? document.getElementsByClassName('recomendacion')[0].innerHTML='Recuerda siempre ser visible para autos' : document.getElementsByClassName('recomendacion')[0].innerHTML=msjReco(res.weather.code);
+    // console.log(res);
 }
 
-function msjReco(code){
-    document.getElementsByClassName('recomendacion')[0].innerHTML='mensaje para dia';
-}
+function msjReco(codigoB){
+    codigoClima.forEach(function (e) {
+      let indice = e.codigo.find((element) => element == codigoB);
+      if (indice) {
+        mensaje = e.mensaje;
+      }
+    });
+    return mensaje;
+  }
